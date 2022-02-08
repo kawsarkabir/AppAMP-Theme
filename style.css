@@ -1,0 +1,594 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1024px;
+    margin: auto;
+}
+.clearfix::after{
+    content:"";
+    clear: both;
+    display: block;
+}
+/* part of header section */
+.header-section{
+    background:#fff;
+    border-bottom: 1px solid #ddd;
+    padding: 6px 0px;
+    position: fixed;
+    left: 0;
+	top: 0;
+	z-index: 99;
+	width: 100%;
+}
+.header-section .logo{
+    float: left;
+    width: 30%;
+    margin-left: 15px;
+}
+.header-section .logo img{
+    width: 50px;
+    float: left;
+}
+.header-section .logo span{
+    margin-left: 10px;
+    margin-top: 15px;
+    display: inline-block;
+    font-size: 22px;
+    font-weight: 500;
+    color: #010101;
+}
+.header-section .menu{
+    float: left;
+    width: 55%;
+}
+.header-section .menu ul{
+    list-style: none;
+    text-align: center;
+}
+.header-section .menu ul li{
+    display: inline-block;
+    line-height: 25px;
+}
+.header-section .menu ul li a{
+    display: inline-block;
+    color: #010101;
+    padding: 12px 10px;
+    font-size: 17px;
+}
+.header-section .button{
+    float: left;
+    width: 12%;
+    margin-top: 5px;
+}
+.header-section .button a{
+    color: #6278df;
+    display: inline-block;
+    padding: 10px 20px;
+    transition: .6s;
+    border: 1px solid #6278df;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.header-section .button a:hover{
+    background-color:#6278df;
+    color: #fff;
+}
+
+/* dorpdown menu */
+.header-section .menu ul li{
+    position: relative;
+}
+.header-section .menu ul li ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width:190px;
+    background:#fff;
+    opacity: 0;
+    visibility:hidden;
+    transition:.4s;
+    transform: scaleY(0);
+    transform-origin: top  center;
+}
+.header-section .menu ul li ul li{
+    display: block;
+}
+.header-section .menu ul li ul li a{
+    color: #010101;
+    display: block;
+}
+.header-section .menu ul li:hover ul{
+    opacity: 1;
+    visibility: visible;
+    transform: scaleY(1);
+}
+
+/* banner section */
+.banner-section{
+    background:url(https://i.ibb.co/3zLDN9m/banner.jpg)no-repeat center center;
+    background-size: cover;
+    padding: 200px 0px;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+.banner-section .text{
+    color: #fff;
+    text-align: center;
+}
+.banner-section .text h1{
+    font-size: 55px;
+    margin: 30px 0px;
+    font-weight: 800;
+}
+.banner-section .text a{
+    margin-right: 6px;
+}
+.btn{
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 15px 20px;
+    display: inline-block;
+    border-radius: 10px;
+    transition: .5s;
+    font-weight: 500;
+}
+.banner-section .btn:hover{
+    background-color:#6278df;
+    color: #fff;
+}
+/* part of video section  */
+.video-section{  
+    background-color: rgb(247, 249, 255);  
+
+    padding: 60px 0px;
+}
+.video-section .video{
+    width: 45%;
+    float: left;
+  
+    margin-top: 54px;
+}
+.video-section .lekha{
+    width: 50%;
+    float: right;
+     
+    margin-top: 50px;
+}
+.video-section .lekha p{
+    color:#7d7d7d ;
+    margin-top: 30px;
+    line-height: 30px;
+}
+.video-section .lekha h1{
+    font-weight: 400;
+}
+/* part of about section */
+.about-application{
+    background-color: #fff;
+    text-align: center;
+    padding: 100px 0px;
+ 
+}
+.about-application .boro-lekha h1{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+.about-application .boro-lekha h3{
+    color: #7d7d7d;
+    font-weight: 400;
+    font-size: 25px;
+}
+.about-application .about-item{
+    width: 30%;
+    float: left;
+    text-align: left;
+    margin-left: 15px;
+    padding: 25px 9px;
+    box-shadow: 4px 4px 20px 0 rgba(0,0,0,.1);
+    margin-top: 80px;
+}
+.about-application .icon{
+
+    float: left;
+    width: 15%;
+    color: #6278df;
+    font-size: 40px;
+    margin-left: 10px;
+}
+.about-application .olpo-lekha{
+    width: 77%;
+    float: right;
+}
+.about-application .olpo-lekha h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.about-application .olpo-lekha p{
+    line-height: 30px;
+    margin-top: 26px;
+    color: #7d7d7d;
+}
+/* part of priceing- seection */
+
+.priceing-table-section{
+    background:#f7f9ff;
+    padding: 100px 0px;
+}
+.priceing-table-section .subtitle{
+    text-align: center;
+}
+.priceing-table-section .subtitle h2{
+    font-size: 50px;
+    font-weight: 400;
+}
+.priceing-table-section .subtitle p{
+    color: #767676;
+    font-size: 26px;
+    font-weight: 300;
+}
+.priceing-table .priceing-item{
+    width: 31%;
+    float: left;
+    margin-left: 22px;
+    background: #fff;
+    margin-top: 90px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+}
+.priceing-item .p-heading{
+    padding: 30px;
+    border-bottom: 1px solid #ddd;
+    transition: .4s;
+}
+.priceing-item .p-heading h4{
+    font-size: 22px;
+    font-weight: 500;
+}
+.priceing-item .p-heading h1{
+    font-size: 50px;
+    margin: 30px 0px;
+}
+.priceing-item .p-heading span{
+    font-size: 20px;
+}
+.priceing-item .p-heading h5{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.priceing-item .p-heading p{
+    font-size: 20px;
+}
+.priceing-item .p-content{
+    padding: 30px;
+}
+.priceing-item .p-content ul{
+    list-style: none;
+}
+.priceing-item .p-content ul li{
+    margin: 25px 0px;
+    color: #767676;
+    font-size: 22px;
+}
+.priceing-item .p-content ul li span{
+    color: #6278df;
+    display: inline-block;
+    font-size: 35px;
+    width: 45px;
+}
+.priceing-item .p-button{
+    text-align: center;
+    margin-top: 50px;
+}
+.priceing-item .p-button a{
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.3);
+    transition: .5s;
+}
+
+.priceing-item:hover .p-heading{
+    background: #6278df;
+    color: #fff;
+}
+
+.priceing-item:hover .p-button .btn{
+    background-color: #6278df;
+    color: #fff;
+}
+/* part of teem-sction  */
+.teem-section{
+    background: #fff;
+    padding: 50px 0px;
+}
+.teem-section .t-text{
+    text-align: center;
+    margin-bottom: 90px;
+}
+.teem-section .t-text h2{
+    font-size: 40px;
+    font-weight: 500;
+}
+.teem-member{}
+.teem-member .members{
+    width: 22%;
+    float: left;
+    border-block: ;
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    margin-left: 30px;
+}
+.teem-member .members img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.members .member-bio{}
+.member-bio{
+    padding: 20px;
+}
+.member-bio h4{
+    font-size: 23px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+.member-bio p{
+    font-size: 19px;
+    color: #767676;
+}
+/* newsletter section */
+.news-letter-section{
+    background:#f7f9ff;
+    padding: 50px 0px;
+    text-align: center;
+}
+.news-letter-section .ns-text{}
+.news-letter-section .ns-text p{
+    font-size: 25px;
+    font-weight: 300;
+    color: #767676;
+}
+.news-letter-section .ns-text h2{
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 40px;
+}
+.news-letter-section .ns-from{
+    margin-top: 50px;
+}
+.default-input{
+    width: 250px;
+    padding: 14px 15px;
+    font-size: 16px;
+    border: 1px solid #e4e4e4;
+    border-radius: 10px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.1);
+    transition: .3s;
+    box-sizing: border-box;
+}
+.default-input:focus{
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+    border: 1px solid transparent;
+   
+}
+.submit-btn{
+    background: #6278df;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    padding: 11px 14px;
+    font-weight: 500;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    margin-left: 15px;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    border: 1px solid transparent;
+    transition: .4s;
+    width: 190px;
+}
+button.submit-btn:hover{
+    background: #fff;
+    color: #6278df;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.5);
+    border: 1px solid #6278df;
+}
+/* part 0f blog */
+.blog-section{
+    background: #fff;
+    padding: 100px 0px;
+}
+.blog-section .b-text{
+    width: 35%;
+    float: left;
+}
+.blog-section .b-text h1{
+    font-size: 39px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+.blog-section .b-text-2{
+    width: 50%;
+    float: right;
+    font-size: 16px;
+    font-weight: 400;
+    color: #767676;
+    line-height: 25px;
+}
+.blog-section .report{
+    width: 48%;
+    float: left;
+    margin-top: 80px;
+    margin-right: 20px;
+}
+.report .image{
+    float: left;
+    width: 48%;
+}
+.report-text{
+    float:right;
+    width: 45%;
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    padding: 10px;
+    padding: 11px 17px;
+}
+.report-text h4{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.report-text p{
+    color: #767676;
+    line-height: 30px;
+    font-size: 17px;
+}
+/* part of feedback */
+.feedback-section{
+    background-color:#f7f9ff;
+    padding: 100px 0px;
+}
+.feedback-section .fs-text{
+    text-align: center;
+}
+.fs-text p {
+    font-weight: 300;
+    font-size: 20px;
+  }
+.fs-text h2{
+    font-size: 50px;
+    font-weight: 500;
+}
+.feedback-items .item-1{
+    float: left;
+    width: 31%;
+    margin-top: 80px;
+    margin-left: 22px;
+}
+.item-1 .item-pera{
+    background: #fff;
+    box-shadow: 3px 4px 30px 0 rgba(98, 120, 223,.2);
+    padding: 20px 40px;
+    box-sizing: border-box;
+    margin-bottom: 42px;
+    position: relative;
+}
+.item-1 .item-pera::after{
+    content: "";
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: -25px;
+    margin: auto;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 25px 0 25px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.item-1 .item-pera p{
+    line-height: 30px;
+    color: #767676;
+    font-size: 20px;
+    position: relative;
+}
+.item-1 .item-pera p::before{
+    content: "\f10d";
+    position: absolute;
+    font-family:"Font Awesome 5 Free";
+    font-weight: 900;
+    top: -3px;
+    left: -10px;
+    font-size: 60px;
+    opacity: 0.15;
+}
+.user-info{
+    margin-left: 30px;
+}
+.user-info img{
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+}
+.user-info .user-bio{
+    float: left;
+    margin-left: 25px;
+    margin-top: 15px;
+}
+.user-info .user-bio h4{
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+/* part of contact us */
+.contact-section{
+    background-color: #fff;
+    padding-top:60px;
+}
+.contact-section .map{
+    width: 48%;
+    float: left;
+}
+.contact-text{
+    float:right;
+    width: 48%;
+}
+.contact-text h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 30px;
+}
+.contact-text p{
+    color: #767676;
+    margin: 20px 0px;
+    line-height: 30px;
+}
+.contact-from .left{
+    float: left;
+}
+.contact-from .right{
+    float: right;
+}
+.contact-from .w100{
+    width: 100%;
+}
+.contact-from .w50{
+    width: 48%;
+}
+.contact-from input{
+    margin-bottom: 20px;
+}
+.contact-from button{
+    margin-top: 20px;
+    margin-left: 0px;
+}
+.contact-from textarea{
+    height: 160px;
+}
+/* part of fotter-section */
+.fotter-section{
+     text-align: center;
+     padding: 15px 0px;
+     margin-top: 50px;
+}
+.fotter-section p{
+    font-size: 20px;
+    
+}
